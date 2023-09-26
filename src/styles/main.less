@@ -1,0 +1,68 @@
+@fontePrincipal: 'Gloock', serif;
+@fontSecundaria: 'Lobster', cursive;
+@corTexto: black;
+@corFundo: yellow;
+@corBotao: orangered;
+
+body
+{
+    background-color: @corFundo;
+    font-family: @fontePrincipal;
+    color: @corTexto;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h1
+{
+    font-family: @fontSecundaria;
+    font-size: 60px;
+}
+
+main
+{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button
+{
+    padding: 16px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: @corBotao;
+    color: white;
+    font-family: @fontePrincipal;
+}
+
+input
+{
+    display: block;
+    margin: 50px auto 50px;
+    max-width: 120px;
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    text-align: center;
+    color: @corTexto;
+    border-bottom: 3px solid white;
+}
+
+.resultado
+{
+    padding: 20px;
+    margin-top: 80px;
+    border: 6px dotted #000000;
+    display: none;
+
+    span
+    {
+        font-weight: bold;
+        font-size: 50px;
+        display: block;
+    }
+}
